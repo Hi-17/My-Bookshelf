@@ -1,0 +1,35 @@
+{
+  "/works/OL17930368W": {
+    "id": "/works/OL17930368W",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "cover": "https://covers.openlibrary.org/b/id/12539702-M.jpg",
+    "genre": "Habit",
+    "is_favorite": true,
+    "is_read": false,
+    "rating": null,
+    "summary": ""
+  },
+  "/works/OL19761410W": {
+    "id": "/works/OL19761410W",
+    "title": "The Laws of Human Nature",
+    "author": "Robert Greene",
+    "cover": "https://covers.openlibrary.org/b/id/10170095-M.jpg",
+    "genre": "Self-actualization (Psychology)",
+    "is_favorite": true,
+    "is_read": false,
+    "rating": null,
+    "summary": ""
+  },
+  "/works/OL16085155W": {
+    "id": "/works/OL16085155W",
+    "title": "Steve Jobs",
+    "author": "Walter Isaacson",
+    "cover": "https://covers.openlibrary.org/b/id/12374726-M.jpg",
+    "genre": "TECHNOLOGY & ENGINEERING / General",
+    "is_favorite": true,
+    "is_read": false,
+    "rating": null,
+    "summary": ""
+  }
+}

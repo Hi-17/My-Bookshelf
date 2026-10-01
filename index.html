@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Bookshelf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>⋆｡‧˚ʚ🍓ɞ˚‧｡⋆ My Bookshelf ⋆｡‧˚ʚ🍓ɞ˚‧｡⋆</h1>
+
+    <nav class="menu" id="menu">
+        <button data-view="bestseller">🔥 Bestsellers</button>
+        <button data-view="fantasy">🐉 Fantasy</button>
+        <button data-view="romance">💖 Romance</button>
+        <button data-view="favorites">⭐ Favorites</button>
+        <button data-view="read">📖 Read</button>
+    </nav>
+
+    <div class="search">
+        <input id="searchInput" type="search" placeholder="Search by title or author" aria-label="Search books">
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <p id="status" role="status"></p>
+    <main id="grid" class="grid"></main>
+
+    <section id="detailPage" hidden>
+        <button id="backBtn">← Back</button>
+        <div id="detailContent"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

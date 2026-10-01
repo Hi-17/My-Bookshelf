@@ -1,0 +1,96 @@
+:root {
+    --bg: #ffd6e7;
+    --text: #5a1a3a;
+    --accent: #ff8fb8;
+    --accent-dark: #e0629a;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 18px;
+    margin: 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    background: var(--accent);
+    color: white;
+    transition: background 0.15s;
+}
+button:hover { background: var(--accent-dark); }
+button:focus-visible, input:focus-visible, textarea:focus-visible {
+    outline: 3px solid var(--text);
+    outline-offset: 2px;
+}
+button.active { background: var(--text); }
+
+.search input {
+    font-size: 16px;
+    padding: 10px 14px;
+    width: min(320px, 70vw);
+    border: 2px solid var(--accent);
+    border-radius: 12px;
+}
+
+#status { min-height: 24px; margin: 10px 0 0; }
+#status.error { color: #b00020; font-weight: bold; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px 15px;
+    padding: 20px;
+}
+
+.card { position: relative; }
+.card img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+}
+.card p { margin: 8px 0 0; font-size: 14px; }
+
+.star, .plus {
+    position: absolute;
+    top: 6px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 50%;
+    color: var(--text);
+}
+.star:hover, .plus:hover { background: white; }
+.star { right: 6px; }
+.plus { left: 6px; }
+
+#detailPage { padding: 30px; }
+#detailPage img { width: 200px; border-radius: 10px; }
+.rating button { font-size: 22px; background: none; color: var(--text); padding: 2px 4px; }
+.rating button:hover { background: none; transform: scale(1.15); }
+textarea {
+    width: min(480px, 90%);
+    height: 110px;
+    padding: 10px;
+    border: 2px solid var(--accent);
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 15px;
+}
